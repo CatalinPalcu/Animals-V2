@@ -11,7 +11,7 @@ namespace Animals
             WildDuck rata = new WildDuck("Donald", 20, 6, 35, 500);
             Piranha piranha = new Piranha("Nemo", 25, 250);
             AhkistrodonPiscivorus mocasin = new AhkistrodonPiscivorus("Boa", 20, 15, "frogs");
-            Ladybug gargarita = new Ladybug("Gargarita", 0.5, 15, Ladybug.LadybugColor.Black, 12);
+            Ladybug gargarita = new Ladybug("Gargarita", 0.5, 15, Color.Black, 12);
 
             Animal[] animals = { ornitorinc, rata, piranha, mocasin, gargarita };
             Console.WriteLine("\t\tInitialy\n");

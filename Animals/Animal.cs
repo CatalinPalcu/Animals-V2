@@ -13,6 +13,13 @@ namespace Animals
         Insect
     }
 
+    public enum Color
+    {
+        Red,
+        Yellow,
+        Black
+    }
+
     public class Animal
     {
         public string Name { get; set; }

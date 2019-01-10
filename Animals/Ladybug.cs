@@ -6,12 +6,7 @@ namespace Animals
 {
     public class Ladybug : Animal, IWalking, IFlying
     {
-        public enum LadybugColor
-        {
-            Red,
-            Yellow,
-            Black
-        }
+
 
         private static readonly Categories category;
 
@@ -19,7 +14,7 @@ namespace Animals
         private double maxFlyingSpeed = 0;
 
         private readonly int numberOfPoints;
-        private readonly LadybugColor color;
+        private readonly Color color;
 
         public double MaxWalkingSpeed { get => this.maxWalkingSpeed; set => this.maxWalkingSpeed = (value >= 0) ? value : maxWalkingSpeed; }
         public double MaxFlyingSpeed { get => this.maxFlyingSpeed; set => this.maxFlyingSpeed = (value >= 0) ? value : maxFlyingSpeed; }
@@ -31,11 +26,11 @@ namespace Animals
 
         public Ladybug()
         {
-            color = LadybugColor.Red;
+            color = Color.Red;
             numberOfPoints = 6;
         }
 
-        public Ladybug(string _name, double _maxWalkingSpeed, double _maxFlyingSpeed, LadybugColor _color, int _numberOfPoints) : base(_name)
+        public Ladybug(string _name, double _maxWalkingSpeed, double _maxFlyingSpeed, Color _color, int _numberOfPoints) : base(_name)
         {
             MaxWalkingSpeed = _maxWalkingSpeed;
             MaxFlyingSpeed = _maxFlyingSpeed;
